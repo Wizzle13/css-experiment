@@ -42,3 +42,28 @@ button {
         1px 1px 5px rgba(0,0,0,0.3) inset;
         
 }
+
+/* makes broken images look better */
+img {
+    position:relative;
+    min-height: 150px;
+    max-height: 250px;
+}
+img:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: purple;
+    border-radius: 0.75rem;
+}
+
+img:after {
+    content: "we lost our " attr(alt);
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
