@@ -1,0 +1,44 @@
+/*  */
+.container {
+    /* sets the border. Width of the border, style and color */
+    border: 5px solid fuchsia;
+    /* sets the width of the container with a min and max size */
+    width: min(100% - 2rem, 800px);
+    height: 400px;
+    /* adds margin  */
+    margin-inline: auto;
+
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 175px;
+    transition: all;
+    transition-duration: 250ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.neu-btn {
+    background: #e8ecf2;
+    color: #73787d;
+    /* gives rounded apperance */
+    border-radius: 9999px;
+    border: 4px solid #e8ecf2;
+    /* adds effect to make button appear to be sticking out */
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.8),
+        5px 5px 10px rgba(0,0,0,0.25);
+}
+
+.neu-btn:hover {
+    color: rgb(211,24,24);
+    /* inset addon makes button appear to go down into the page */
+    box-shadow: -1px -1px 5px rgba(255,255,255,0.6) inset,
+        1px 1px 5px rgba(0,0,0,0.3) inset;
+        
+}
